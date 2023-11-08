@@ -8,6 +8,9 @@ public enum OrderStatus {
 	DELIVERED(4),
 	CANCELED(5);
 	
+	
+	// OBS: abaixo esta um metodo para enumerar as OrderStatus no banco de dados.
+	//		caso algum programador queira fazer alguma alteração, nesse caso não irá afetar a ordem dos status.
 	private int code;
 	
 	private OrderStatus(int code) {
